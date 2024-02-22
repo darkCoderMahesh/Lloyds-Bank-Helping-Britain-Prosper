@@ -22,6 +22,21 @@
         a:hover{
             background-color: #068f48;
         }
+        .banners{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .ban-area{
+            position: relative;
+        }
+        .ban-area h2{
+            position: sticky;
+            top: 0px;
+            background-color: #fff;
+            padding: 10px 0;
+            margin-bottom: 0px;
+        }
     </style>
 </head>
 <body>
@@ -44,34 +59,58 @@
 <br>
 <br>
     
-    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-        <div>
-            <h5>Guardian 300x250</h5>
-           <iframe src="./Guardian-Standard/300x250/index.html" frameborder="0" width="300px" height="250px"></iframe>
-       </div>
-       <div>
-            <h5>Times 300x250</h5>
-           <iframe src="./Times-Rich-Media/300x250/index.html" frameborder="0" width="300px" height="250px"></iframe>
-       </div>
-       
-        <div>
-            <h5>Guardian 300x250</h5>
-            <iframe src="./Guardian-Standard/300x600/index.html" frameborder="0" width="300px" height="600px"></iframe>
+    <div class="ban-area">
+        <h2>➤ GUARDIAN</h2>
+        <div class="banners">
+            <div>
+                <h5>Guardian 300x250</h5>
+                <iframe src="./Guardian-Standard/300x600/index.html" frameborder="0" width="300px" height="600px"></iframe>
+            </div>
+            <div>
+                <h5>Guardian 300x250</h5>
+            <iframe src="./Guardian-Standard/300x250/index.html" frameborder="0" width="300px" height="250px"></iframe>
         </div>
-        <div>
-            <h5>Times 300x250</h5>
-            <iframe src="./Times-Rich-Media/300x600/index.html" frameborder="0" width="300px" height="600px"></iframe>
+            <div>
+                <h5>Guardian 970x250</h5>
+                <iframe src="./Guardian-Standard/970x250/index.html" frameborder="0" width="970px" height="250px"></iframe>
+            </div>
         </div>
-        <div>
-            <h5>Guardian 970x250</h5>
-            <iframe src="./Guardian-Standard/970x250/index.html" frameborder="0" width="970px" height="250px"></iframe>
-        </div>
-       <div>
-            <h5>Times 970x250</h5>
-           <iframe src="./Times-Rich-Media/970x250/index.html" frameborder="0" width="970px" height="250px"></iframe>
-       </div>
-       
-       
+<hr>
+
+    <div class="ban-area">
+        <h2>➤ TIMES</h2>
+            <div class="banners">
+                <div>
+                    <h5>Times 300x600</h5>
+                    <iframe src="./Times-Rich-Media/300x600/index.html" frameborder="0" width="300px" height="600px"></iframe>
+                </div>
+                <div>
+                    <h5>Times 300x250</h5>
+                <iframe src="./Times-Rich-Media/300x250/index.html" frameborder="0" width="300px" height="250px"></iframe>
+            </div>
+                <div>
+                    <h5>Times 970x250</h5>
+                <iframe src="./Times-Rich-Media/970x250/index.html" frameborder="0" width="970px" height="250px"></iframe>
+            </div>
+            </div> 
+        </div>  
     </div>
+
+    <hr>
+    
+    <div class="ban-area">
+        <h2>➤ POLITICS</h2> 
+        <div class="banner">
+            <div>
+                <h5>Politics Home ROS Package 320x100</h5>
+                <iframe src="./Politics/320x100/index.html" frameborder="0" width="320px" height="100px"></iframe>
+            </div>
+            <div>
+                <h5>Politics Home ROS Package 728x90</h5>
+                <iframe src="./Politics/728x90/index.html" frameborder="0" width="728px" height="90px"></iframe>
+            </div>
+        </div>
+    </div>
+        
 </body>
 </html>
