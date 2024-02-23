@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="ad.size" content="width=300,height=250">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-   
-  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
-
-   
-   
-
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      var clickTag = "https://www.google.com/";
+    </script>
 
     <style rel="stylesheet" type="text/css">
       @font-face {
@@ -37,6 +35,10 @@
         -ms-user-select: none;
         user-select: none;
       }
+      body {
+        margin: 0;
+        padding: 0;
+      }
       #main-container {
         position: absolute;
         width: 300px;
@@ -55,10 +57,6 @@
         width: 100%;
         height: 100%;
         z-index: 2;
-      }
-      body {
-        margin: 0;
-        padding: 0;
       }
       #banner {
         width: 300px;
@@ -183,6 +181,25 @@
       <div id="bg-exit"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      var tl;
+        tl = new TimelineMax();
+        function show() {
+            tl.to(copy1,0.5,{ ease: "power1.in", autoAlpha:1 },"+=0.5");
+            tl.to(copy2,0.5,{ ease: "power1.in", autoAlpha:1 },"+=0.8");
+            tl.to(copy3,0.5,{ ease: "power1.in", autoAlpha:1 },"+=1.1");
+            tl.to(["#copy1, #copy2, #copy3"], 0.5, { ease: "power1.in", autoAlpha:0, display: "none" },"+=1.2");
+            tl.to(copy4,0.5,{ ease: "power1.in", autoAlpha:1 },">");
+            tl.to(copy5,0.5,{ ease: "power1.in", autoAlpha:1 },"+=1.7");
+            tl.to(cta,0.5,{ ease: "power1.in", autoAlpha:1 },"+=2");
+
+        }
+    </script>
+    <script>
+      var clickArea = document.getElementById("bg-exit");
+      clickArea.onclick = function () {
+        window.open(clickTag);
+      };
+  </script>
   </body>
 </html>
